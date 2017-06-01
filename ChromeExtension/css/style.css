@@ -1,0 +1,52 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    min-width: 500px;
+    min-height: 300px;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+}
+
+.title h1 {
+    font-size: 64px;
+}
+
+@media screen and (min-width: 480px) {
+    #search {
+        padding-top: 25px;
+    }
+}
+
+#search .form-control {
+    border: 1px solid #cc6d27;
+}
+
+#results {
+    display: none;
+    padding-top: 20px;
+}
+
+#spinner {
+    margin-top: 50px;
+    margin-right: 50%;
+    display: none;
+    float: right;
+}
+
+#classifications {
+    text-align: center;
+    padding: 10px;
+}
+#classifications .buttons {
+    padding-top:20px;
+}
+
+#news {
+    margin: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
+    <title>Notícias - LPJI</title>
+
+    <!-- Fonts -->
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div id="search">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="title">
+                    <span class="label label-danger">Alpha</span>
+                    <h1>Notícias</h1>
+                </div>
+
+                <input id="url" type="text" class="form-control" placeholder="Insira o link de uma notícia...">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="spinner"></div>
+        <div class="col-md-8 col-md-offset-2">
+            <div id="results" class="row">
+                <div id="classifications">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div id="results-classification"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="news" class="panel panel-default">
+                    <div id="results-content" class="panel-body"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/spin.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

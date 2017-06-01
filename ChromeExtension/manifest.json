@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Notícias (LPJI)",
+  "description": "Extensão para verificar notícias",
+  "version": "0.0.1",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "app.html"
+  },
+  "permissions": [
+    "storage",
+    "*://*/*"
+  ],
+  "content_scripts": [{
+    "js": ["js/jquery.min.js", "js/spin.min.js", "js/main.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}
